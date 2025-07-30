@@ -1,0 +1,127 @@
+const contacts = [
+    {
+        id: 1,
+        name: "Ana López",
+        profilePic: "..src/../Public/Images/ana-lopez.jpg",
+        messages: [
+            {
+                id: 101,
+                user: "Ana López",
+                time: "10:30 AM",
+                text: "Hola, ¿cómo estás?",
+                status: "read",
+            },
+            {
+                id: 102,
+                user: "Yo",
+                time: "10:32 AM",
+                text: "¡Bien, gracias! ¿Y tú?",
+                status: "delivered",
+            },
+            {
+                id: 103,
+                user: "Ana López",
+                time: "10:33 AM",
+                text: "Todo bien por aquí. ¿Quedamos más tarde?",
+                status: "read",
+            },
+        ],
+    },
+    {
+        id: 2,
+        name: "Carlos Ruiz",
+        profilePic: "..src/../Public/Images/carlos-ruiz.jpg",
+        messages: [
+            {
+                id: 201,
+                user: "Carlos Ruiz",
+                time: "9:15 AM",
+                text: "¿Viste el partido ayer?",
+                status: "read",
+            },
+            {
+                id: 202,
+                user: "Yo",
+                time: "9:20 AM",
+                text: "Sí, increíble el gol en el minuto 89",
+                status: "read",
+            },
+        ],
+    },
+    {
+        id: 3,
+        name: "María Gómez",
+        profilePic: "..src/../Public/Images/maria-gomez.jpg",
+        messages: [
+            {
+                id: 301,
+                user: "María Gómez",
+                time: "Ayer",
+                text: "Te envié el documento que me pediste",
+                status: "read",
+            },
+            {
+                id: 302,
+                user: "Yo",
+                time: "Ayer",
+                text: "Perfecto, ya lo reviso. ¡Gracias!",
+                status: "read",
+            },
+        ],
+    },
+    {
+        id: 4,
+        name: "David Torres",
+        profilePic: "..src/../Public/Images/david-torres.jpg",
+        messages: [
+            {
+                id: 401,
+                user: "David Torres",
+                time: "Martes",
+                text: "¿Quedamos el viernes para el proyecto?",
+                status: "read",
+            },
+        ],
+    },
+    {
+        id: 5,
+        name: "Sofía Martín",
+        profilePic: "..src/../Public/Images/sofia-martin.jpg",
+        messages: [
+            {
+                id: 501,
+                user: "Sofía Martín",
+                time: "Lunes",
+                text: "¿Me pasas el enlace de la reunión?",
+                status: "read",
+            },
+            {
+                id: 502,
+                user: "Yo",
+                time: "Lunes",
+                text: "Claro, es meet.google.com/abc-xyz",
+                status: "read",
+            },
+            {
+                id: 503,
+                user: "Sofía Martín",
+                time: "Lunes",
+                text: "Gracias 😊",
+                status: "read",
+            },
+        ],
+    },
+];
+
+export const getContacts = () => {
+    return contacts;
+};
+
+export const getContactsById = (contacts_id) => {
+    for (const contact of contacts) {
+        if (Number(contact.id) === Number(contacts_id)) {
+            return contact;
+        }
+    }
+    return null;
+};

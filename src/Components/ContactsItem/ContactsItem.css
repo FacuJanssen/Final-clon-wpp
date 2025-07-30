@@ -1,0 +1,30 @@
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.contact-item:hover {
+    background-color: #383838;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.contact-name {
+    font-size: 16px;
+}
+
+.last-message {
+    font-weight: 150;
+}
