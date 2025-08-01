@@ -2,17 +2,23 @@ import React from "react";
 import Chats from "../Components/Chats/Chats";
 import { useState } from "react";
 import NewMessageForm from "../Components/NewMessage/NewMessageForm";
-import { useParams } from "react-router";
-import { getContactsById } from "../Services/contactServices";
+import { useParams } from "react-router-dom";
+import { getContactsById } from "../Services/contactServices.js";
 import "./ChatScreen.css";
-import ContactsScreen from "./ContactsScreen";
+import ContactsList from "../Components/ContactsList/ContactsList";
+import { getContacts } from "../Services/contactServices.js";
+import "./ContactsScreen.css";
 
 const date = new Date();
 
 const ChatScreen = () => {
     const { contact_id } = useParams();
     const contact_selected = getContactsById(contact_id);
+
     const [chats, setChats] = useState(contact_selected.messages);
+
+    const contacts = getContacts();
+    const [contactsState, setContactsState] = useState(contacts);
     const deleteMessage = (message_id) => {
         const deletedMessages = chats.filter(
             (message) => message.id !== message_id
@@ -36,8 +42,12 @@ const ChatScreen = () => {
 
     return (
         <div className="chat-screen">
-            <Chats chats={chats} deleteMessage={deleteMessage} />
-            <NewMessageForm addNewMessage={addNewMessage} />
+            <ContactsList contacts={contactsState} />
+            <div className="chat-container">
+                <h2 className="contact-chat-name">{contact_selected.name}</h2>
+                <Chats chats={chats} deleteMessage={deleteMessage} />
+                <NewMessageForm addNewMessage={addNewMessage} />
+            </div>
         </div>
     );
 };

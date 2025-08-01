@@ -1,0 +1,27 @@
+.time {
+    font-size: 10px;
+    color: #a1a1a1;
+    display: flex;
+    align-items: end;
+}
+
+.message-left {
+    background-color: #363636;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.message-rigth {
+    background-color: #005c4b;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    width: fit-content;
+}

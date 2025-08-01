@@ -9,7 +9,7 @@ const NewMessageForm = ({ addNewMessage }) => {
     };
 
     return (
-        <form onSubmit={handleSubmitSendMessage}>
+        <form onSubmit={handleSubmitSendMessage} className="new-message-form">
             <label htmlFor="message" className="message-label">
                 Write a message
             </label>

@@ -2,26 +2,26 @@ const contacts = [
     {
         id: 1,
         name: "Ana López",
-        profilePic: "..src/../Public/Images/ana-lopez.jpg",
+        profilePic: "/Images/ana-lopez.jpg",
         messages: [
             {
                 id: 101,
                 user: "Ana López",
-                time: "10:30 AM",
+                time: "10:30",
                 text: "Hola, ¿cómo estás?",
                 status: "read",
             },
             {
                 id: 102,
                 user: "Yo",
-                time: "10:32 AM",
+                time: "10:32",
                 text: "¡Bien, gracias! ¿Y tú?",
-                status: "delivered",
+                status: "read",
             },
             {
                 id: 103,
                 user: "Ana López",
-                time: "10:33 AM",
+                time: "10:35",
                 text: "Todo bien por aquí. ¿Quedamos más tarde?",
                 status: "read",
             },
@@ -30,19 +30,19 @@ const contacts = [
     {
         id: 2,
         name: "Carlos Ruiz",
-        profilePic: "..src/../Public/Images/carlos-ruiz.jpg",
+        profilePic: "/Images/carlos-ruiz.jpg",
         messages: [
             {
                 id: 201,
                 user: "Carlos Ruiz",
-                time: "9:15 AM",
+                time: "09:15",
                 text: "¿Viste el partido ayer?",
                 status: "read",
             },
             {
                 id: 202,
                 user: "Yo",
-                time: "9:20 AM",
+                time: "09:20",
                 text: "Sí, increíble el gol en el minuto 89",
                 status: "read",
             },
@@ -51,19 +51,19 @@ const contacts = [
     {
         id: 3,
         name: "María Gómez",
-        profilePic: "..src/../Public/Images/maria-gomez.jpg",
+        profilePic: "/Images/maria-gomez.jpg",
         messages: [
             {
                 id: 301,
                 user: "María Gómez",
-                time: "Ayer",
+                time: "16:45",
                 text: "Te envié el documento que me pediste",
                 status: "read",
             },
             {
                 id: 302,
                 user: "Yo",
-                time: "Ayer",
+                time: "16:50",
                 text: "Perfecto, ya lo reviso. ¡Gracias!",
                 status: "read",
             },
@@ -72,12 +72,12 @@ const contacts = [
     {
         id: 4,
         name: "David Torres",
-        profilePic: "..src/../Public/Images/david-torres.jpg",
+        profilePic: "/Images/david-torres.jpg",
         messages: [
             {
                 id: 401,
                 user: "David Torres",
-                time: "Martes",
+                time: "11:00",
                 text: "¿Quedamos el viernes para el proyecto?",
                 status: "read",
             },
@@ -86,26 +86,26 @@ const contacts = [
     {
         id: 5,
         name: "Sofía Martín",
-        profilePic: "..src/../Public/Images/sofia-martin.jpg",
+        profilePic: "/Images/sofia-martin.jpg",
         messages: [
             {
                 id: 501,
                 user: "Sofía Martín",
-                time: "Lunes",
+                time: "15:30",
                 text: "¿Me pasas el enlace de la reunión?",
                 status: "read",
             },
             {
                 id: 502,
                 user: "Yo",
-                time: "Lunes",
+                time: "15:32",
                 text: "Claro, es meet.google.com/abc-xyz",
                 status: "read",
             },
             {
                 id: 503,
                 user: "Sofía Martín",
-                time: "Lunes",
+                time: "15:35",
                 text: "Gracias 😊",
                 status: "read",
             },

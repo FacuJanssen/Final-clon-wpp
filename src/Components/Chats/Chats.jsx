@@ -20,6 +20,11 @@ const Chats = ({ chats, deleteMessage }) => {
     });
     return (
         <div className="chat">
+            <img
+                src="/Images/whatsapp-background.png"
+                alt="#2b2b2b"
+                className="chat-background"
+            />
             {message}
             {noMessages}
         </div>

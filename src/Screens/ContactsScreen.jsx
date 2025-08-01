@@ -1,7 +1,7 @@
 import React from "react";
 import ContactsList from "../Components/ContactsList/ContactsList";
 import { useState } from "react";
-import { getContacts } from "../Services/contactServices";
+import { getContacts } from "../Services/contactServices.js";
 import "./ContactsScreen.css";
 
 const ContactsScreen = () => {
