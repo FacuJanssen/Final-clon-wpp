@@ -19,8 +19,9 @@ const NewMessageForm = ({ addNewMessage }) => {
                 placeholder="Type a message"
                 id="message"
                 name="message"
-                required
                 className="message-input"
+                autoComplete="off"
+                required
             />
             <button type="submit">Send</button>
         </form>

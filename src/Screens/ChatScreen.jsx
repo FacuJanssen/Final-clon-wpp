@@ -48,7 +48,16 @@ const ChatScreen = () => {
         <div className="chat-screen">
             <ContactsList contacts={contactsState} />
             <div className="chat-container">
-                <h2 className="contact-chat-name">{contact_selected.name}</h2>
+                <div className="contact-chat-header">
+                    <img
+                        src={contact_selected.profilePic}
+                        alt={contact_selected.name}
+                        className="profile-pic"
+                    />
+                    <h2 className="contact-chat-name">
+                        {contact_selected.name}
+                    </h2>
+                </div>
                 <Chats chats={chats} deleteMessage={deleteMessage} />
                 <NewMessageForm addNewMessage={addNewMessage} />
             </div>

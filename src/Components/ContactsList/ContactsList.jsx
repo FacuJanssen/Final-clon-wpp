@@ -12,11 +12,16 @@ const ContactsList = ({ contacts }) => {
             <input
                 type="text"
                 placeholder="Search or start a new chat"
-                className="search-input"
+                className="search-contact-input"
+                id="search-contact"
+                name="search-contact"
+                autoComplete="off"
             />
-            {contacts.map((contact) => {
-                return <ContactsItem key={contact.id} contact={contact} />;
-            })}
+            <div className="contacts-list-items">
+                {contacts.map((contact) => {
+                    return <ContactsItem key={contact.id} contact={contact} />;
+                })}
+            </div>
         </div>
     );
 };
