@@ -7,7 +7,6 @@ import { getContactsById } from "../Services/contactServices.js";
 import "./ChatScreen.css";
 import ContactsList from "../Components/ContactsList/ContactsList";
 import { getContacts } from "../Services/contactServices.js";
-import "./ContactsScreen.css";
 
 const date = new Date();
 const hours = date.getHours();

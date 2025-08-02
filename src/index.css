@@ -18,3 +18,40 @@
     --neutral-color-700: #212121;
     --neutral-color-800: #000;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .contacts-list {
+        width: calc(40% - 48px);
+    }
+    .chat-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .contacts-list {
+        width: 40%;
+        border-radius: 0;
+        left: 0;
+    }
+    .chat-container {
+        width: 65%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contacts-list {
+        width: 37%;
+        left: 0;
+        border-radius: 0;
+    }
+    .chat-container {
+        width: 65%;
+        left: 0;
+    }
+
+    .search-contact-input {
+        display: none;
+    }
+}

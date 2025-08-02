@@ -6,9 +6,7 @@ const ContactsList = ({ contacts }) => {
     return (
         <div className="contacts-list">
             <h2 className="contacts-list-title">Chats</h2>
-            <label htmlFor="search" className="search-label">
-                Search or start a new chat
-            </label>
+            <label className="search-label">Search or start a new chat</label>
             <input
                 type="text"
                 placeholder="Search or start a new chat"
