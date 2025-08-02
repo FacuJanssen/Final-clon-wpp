@@ -1,27 +1,51 @@
 .time {
     font-size: 10px;
-    color: #a1a1a1;
-    display: flex;
-    align-items: end;
+    color: var(--neutral-color-200);
+}
+
+.message {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    word-wrap: break-word;
 }
 
 .message-left {
-    background-color: #363636;
-    border-radius: 8px;
-    padding: 8px;
-    margin: 8px;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
+    background-color: var(--neutral-color-500);
+    align-self: flex-start;
+}
+
+.message-left .status {
+    display: none;
 }
 
 .message-rigth {
-    background-color: #005c4b;
-    border-radius: 8px;
-    padding: 8px;
-    margin: 8px;
+    background-color: var(--primary-color-200);
+    align-self: flex-end;
+}
+
+.text {
+    color: var(--neutral-color-100);
+}
+
+.message-metadata {
     display: flex;
-    flex-direction: row;
-    justify-self: end;
-    width: fit-content;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    float: right;
+    clear: both;
+}
+
+.message-rigth .delete-button {
+    background: none;
+    border: none;
+    position: relative;
+    right: 64px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.message-rigth:hover .delete-button {
+    opacity: 1;
 }

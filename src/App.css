@@ -1,0 +1,18 @@
+.whatsapp-icon {
+    z-index: 1;
+    position: absolute;
+    font-size: xx-large;
+    top: 8px;
+    left: 8px;
+    color: var(--primary-color-100);
+}
+
+.app-title {
+    z-index: 1;
+    position: absolute;
+    font-size: medium;
+    font-weight: 500;
+    top: 13px;
+    left: 44px;
+    color: var(--neutral-color-100);
+}

@@ -11,7 +11,7 @@ const ContactsItem = ({ contact }) => {
                 className="profile-pic"
             />
             <div className="contact-info">
-                <h2 className="contact-name">{contact.name}</h2>
+                <h3 className="contact-name">{contact.name}</h3>
                 <span className="last-message">
                     {contact.messages[contact.messages.length - 1].text}
                 </span>

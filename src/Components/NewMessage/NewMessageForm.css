@@ -1,0 +1,26 @@
+.message-label {
+    display: none;
+}
+
+.new-message-form {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    bottom: 0;
+}
+
+.message-input {
+    border: none;
+    padding: 12px;
+    color: var(--neutral-color-100);
+    background-color: var(--neutral-color-600);
+    width: 100%;
+}
+
+.message-input::placeholder {
+    color: var(--neutral-color-200);
+}
+
+.message-input:focus {
+    outline: none;
+}

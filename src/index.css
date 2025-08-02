@@ -2,8 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
     text-decoration: none;
-    color: #fff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color-100: #1dab62;
+    --primary-color-200: #005c4b;
+    --neutral-color-100: #fff;
+    --neutral-color-200: #d3d3d3;
+    --neutral-color-300: #a1a1a1;
+    --neutral-color-400: #474747;
+    --neutral-color-500: #383838;
+    --neutral-color-600: #2b2b2b;
+    --neutral-color-700: #212121;
+    --neutral-color-800: #000;
 }

@@ -4,11 +4,15 @@ import "./Message.css";
 const Message = ({ id, user, time, text, status, deleteMessage }) => {
     const userMessageStyle = user === "Yo" ? "message-rigth" : "message-left";
     return (
-        <div className={userMessageStyle}>
+        <div className={userMessageStyle + " message"}>
             <p className="text">{text}</p>
-            <span className="time">{time}</span>
-            <span className="status">{status}</span>
-            <button onClick={() => deleteMessage(id)}>Delete</button>
+            <div className="message-metadata">
+                <span className="time">{time}</span>
+                <span className="status">{status}</span>
+            </div>
+            <button className="delete-button" onClick={() => deleteMessage(id)}>
+                Delete
+            </button>
         </div>
     );
 };

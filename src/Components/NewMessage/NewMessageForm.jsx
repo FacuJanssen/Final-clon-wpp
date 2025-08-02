@@ -1,4 +1,5 @@
 import React from "react";
+import "./NewMessageForm.css";
 
 const NewMessageForm = ({ addNewMessage }) => {
     const handleSubmitSendMessage = (event) => {
@@ -11,14 +12,15 @@ const NewMessageForm = ({ addNewMessage }) => {
     return (
         <form onSubmit={handleSubmitSendMessage} className="new-message-form">
             <label htmlFor="message" className="message-label">
-                Write a message
+                Type a message
             </label>
             <input
                 type="text"
-                placeholder="Write a message"
+                placeholder="Type a message"
                 id="message"
                 name="message"
                 required
+                className="message-input"
             />
             <button type="submit">Send</button>
         </form>

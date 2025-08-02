@@ -3,5 +3,30 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #212121;
+    background-color: var(--neutral-color-700);
+}
+
+.contacts-screen-info-icon {
+    font-size: 100px;
+    padding: 16px;
+    color: var(--neutral-color-300);
+}
+
+.contacts-screen-info-title {
+    color: var(--neutral-color-100);
+    font-weight: 400;
+}
+
+.contacts-screen-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 774px;
+    height: calc(100vh - 48px);
+    position: relative;
+    top: 48px;
+    left: 48px;
+    background-color: var(--neutral-color-600);
+    color: var(--neutral-color-100);
 }

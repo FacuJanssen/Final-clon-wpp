@@ -10,6 +10,10 @@ import { getContacts } from "../Services/contactServices.js";
 import "./ContactsScreen.css";
 
 const date = new Date();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const twoDigitHours = String(hours).padStart(2, "0");
+const twoDigitMinutes = String(minutes).padStart(2, "0");
 
 const ChatScreen = () => {
     const { contact_id } = useParams();
@@ -30,7 +34,7 @@ const ChatScreen = () => {
         const new_message = {
             id: chats.length + 1,
             user: "Yo",
-            time: date.getHours() + ":" + date.getMinutes(),
+            time: twoDigitHours + ":" + twoDigitMinutes,
             text: new_text,
             status: "unread",
         };
