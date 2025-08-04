@@ -13,6 +13,13 @@ function App() {
                 <ICONS.whatsapp className="whatsapp-icon" />
                 <h1 className="app-title">WhatsApp</h1>
             </Link>
+            <Link
+                to="https://github.com/FacuJanssen/Final-clon-wpp"
+                className="github"
+                target="_blank"
+            >
+                <ICONS.github className="github-icon" />
+            </Link>
             <Routes location={location} key={location.key}>
                 <Route path="/" element={<ContactsScreen />} />
                 <Route
