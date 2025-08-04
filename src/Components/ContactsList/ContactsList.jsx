@@ -2,9 +2,15 @@ import React from "react";
 import ContactsItem from "../ContactsItem/ContactsItem";
 import "./ContactsList.css";
 
-const ContactsList = ({ contacts }) => {
+const ContactsList = ({ contacts, hideContactsList, showContactsList }) => {
     return (
-        <div className="contacts-list">
+        <div
+            className={
+                "contacts-list" +
+                (hideContactsList ? " hide-contacts-list" : "") +
+                (showContactsList ? " show-contacts-list" : "")
+            }
+        >
             <h2 className="contacts-list-title">Chats</h2>
             <label className="search-label">Search or start a new chat</label>
             <input

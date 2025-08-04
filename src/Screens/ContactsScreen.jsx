@@ -11,11 +11,11 @@ const ContactsScreen = () => {
 
     return (
         <div className="contacts-screen">
-            <ContactsList contacts={contactsState} />
+            <ContactsList contacts={contactsState} showContactsList />
             {
                 <div className="contacts-screen-info">
                     <ICONS.whatsapp className="contacts-screen-info-icon" />
-                    <h3 className="contacts-screen-info-title">
+                    <h3 className="contacts-screen-info-title-contacts">
                         WhatsApp for Windows
                     </h3>
                     <span className="contacts-screen-info-subtitle">

@@ -45,7 +45,7 @@ const ChatScreen = () => {
 
     return (
         <div className="chat-screen">
-            <ContactsList contacts={contactsState} />
+            <ContactsList contacts={contactsState} hideContactsList />
             <div className="chat-container">
                 <div className="contact-chat-header">
                     <img

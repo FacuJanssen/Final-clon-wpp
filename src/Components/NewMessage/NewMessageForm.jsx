@@ -1,5 +1,6 @@
 import React from "react";
 import "./NewMessageForm.css";
+import ICONS from "../../constants/Icons";
 
 const NewMessageForm = ({ addNewMessage }) => {
     const handleSubmitSendMessage = (event) => {
@@ -23,7 +24,9 @@ const NewMessageForm = ({ addNewMessage }) => {
                 autoComplete="off"
                 required
             />
-            <button type="submit">Send</button>
+            <button type="submit" className="send-button">
+                <ICONS.send className="send-icon" />
+            </button>
         </form>
     );
 };

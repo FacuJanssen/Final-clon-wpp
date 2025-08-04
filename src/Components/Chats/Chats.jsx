@@ -1,9 +1,12 @@
 import React from "react";
 import Message from "../Message/Message";
-import "./Chat.css";
+import "../Message/Message.css";
 
 const Chats = ({ chats, deleteMessage }) => {
-    const noMessages = chats.length === 0 ? <span>No messages</span> : null;
+    const noMessages =
+        chats.length === 0 ? (
+            <span className="no-messages">No messages</span>
+        ) : null;
 
     const message = chats.map((chat, index) => {
         return (
@@ -20,10 +23,10 @@ const Chats = ({ chats, deleteMessage }) => {
     });
     return (
         <div className="chat">
-            {/* <img
+            <img
                 src="/Images/whatsapp-background.png"
                 className="chat-background"
-            /> */}
+            />
             {message}
             {noMessages}
         </div>

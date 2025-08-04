@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 100vw;
     height: 100vh;
-    background-color: var(--neutral-color-700);
+    background-color: var(--neutral-color-800);
 }
 
 .chat-container {
@@ -14,10 +14,11 @@
     height: calc(100vh - 48px);
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .contact-chat-header {
-    background-color: var(--neutral-color-600);
+    background-color: var(--neutral-color-700);
     padding: 12px;
     position: sticky;
     top: 0;
@@ -39,4 +40,25 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    overflow-y: auto;
+}
+
+.chat-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-contacts-list {
+        display: none;
+    }
+
+    .chat-container {
+        width: calc(100% - 48px);
+    }
 }

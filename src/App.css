@@ -1,5 +1,4 @@
 .whatsapp-icon {
-    z-index: 1;
     position: absolute;
     font-size: xx-large;
     top: 8px;
@@ -8,7 +7,6 @@
 }
 
 .app-title {
-    z-index: 1;
     position: absolute;
     font-size: medium;
     font-weight: 500;

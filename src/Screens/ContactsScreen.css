@@ -3,7 +3,21 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
+    background-color: var(--neutral-color-800);
+}
+
+.contacts-screen-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: calc(100vh - 48px);
+    position: relative;
+    top: 48px;
+    left: 48px;
     background-color: var(--neutral-color-700);
+    color: var(--neutral-color-100);
 }
 
 .contacts-screen-info-icon {
@@ -17,16 +31,13 @@
     font-weight: 400;
 }
 
-.contacts-screen-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 774px;
-    height: calc(100vh - 48px);
-    position: relative;
-    top: 48px;
-    left: 48px;
-    background-color: var(--neutral-color-600);
-    color: var(--neutral-color-100);
+@media screen and (max-width: 768px) {
+    .contacts-screen-info {
+        display: none;
+        width: 100%;
+    }
+
+    .show-contacts-list {
+        width: calc(100% - 48px);
+    }
 }

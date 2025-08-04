@@ -1,10 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ContactsItem.css";
+import { useParams } from "react-router-dom";
+import { getContactsById } from "../../Services/contactServices";
 
 const ContactsItem = ({ contact }) => {
+    const { contact_id } = useParams();
+    const contactSelected =
+        Number(contact_id) === Number(contact.id)
+            ? "contact-item selected"
+            : "contact-item";
     return (
-        <Link to={`/contact/${contact.id}/messages`} className="contact-item">
+        <Link
+            to={`/contact/${contact.id}/messages`}
+            className={contactSelected}
+        >
             <img
                 src={contact.profilePic}
                 alt={contact.name}
